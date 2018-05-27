@@ -343,6 +343,28 @@ class Background {
             int random = randomNumber(uniqueChoices.size());
             uniqueChoice = uniqueChoices.get(random);
         }
+        else if (name.equals("Noble")){
+            player.skills.addProf("History");
+            player.skills.addProf("Persuasion");
+            
+            player.proficiencies.addTool("Any gaming kit");
+            
+            player.languagesChoices++;
+            
+            Item item = new Item("Fine clothes", "wearable");
+            player.equipment.addEquipment(item);
+
+            item = new Item("Signet ring", "other");
+            player.equipment.addEquipment(item);
+            
+            item = new Item("Scroll of pedigree", "other");
+            player.equipment.addEquipment(item);
+            
+            item = new Item("Purse", "container");
+            player.equipment.addEquipment(item);
+            
+            player.equipment.addGold(25);
+        }
     }
     
         private int randomNumber(int max){
