@@ -47,6 +47,7 @@ class Background {
         backgrounds.add("Entertainer");
         backgrounds.add("Folk Hero");
         backgrounds.add("Guild Artisan");
+        backgrounds.add("Hermit");
         
         //return
         return backgrounds;
@@ -764,8 +765,22 @@ class Background {
             bonds.add("I will get revenge on the evil forces that destroyed "
                     + "my place of business and ruined my livelihood.");
         }
+        else if (this.name.equals("Hermit")){
+            bonds.add("Nothing is more important than the other members of my "
+                    + "hermitage, order, or association.");
+            bonds.add("I entered seclusion to hide from the ones who might "
+                    + "still be hunting me. I must someday confront them.");
+            bonds.add("I’m still seeking the enlightenment I pursued in my "
+                    + "seclusion, and it still eludes me.");
+            bonds.add("I entered seclusion because I loved someone I could "
+                    + "not have.");
+            bonds.add("Should my discovery come to light, it could bring "
+                    + "ruin to the world.");
+            bonds.add("My isolation gave me great insight into a great evil "
+                    + "that only I can destroy.");
         int choice = (int) (Math.random()*bonds.size());
         bond = bonds.get(choice);
+        }
     }
 
     private void setFlaw() {
@@ -843,6 +858,17 @@ class Background {
             flaws.add("I would kill to acquire a noble title.");
             flaws.add("I’m horribly jealous of anyone who can outshine my "
                     + "handiwork. Everywhere I go, I’m surrounded by rivals.");
+        }
+        else if (this.name.equals("Hermit")){
+            flaws.add("Now that I've returned to the world, I enjoy its "
+                    + "delights a little too much.");
+            flaws.add("I harbor dark, bloodthirsty thoughts that my isolation "
+                    + "and meditation failed to quell.");
+            flaws.add("I am dogmatic in my thoughts and philosophy.");
+            flaws.add("I let my need to win arguments overshadow friendships "
+                    + "and harmony.");
+            flaws.add("I’d risk too much to uncover a lost bit of knowledge.");
+            flaws.add("I like keeping secrets and won’t share them with anyone.");
         }
         int choice = (int) (Math.random()*flaws.size());
         flaw = flaws.get(choice);
