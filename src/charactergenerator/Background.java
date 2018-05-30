@@ -600,6 +600,24 @@ class Background {
             traits.add("I am working on a grand philosophical theory and love "
                     + "sharing my ideas.");
         }
+        else if (this.name.equals("Noble")){
+            traits.add("My eloquent flattery makes everyone I talk to feel "
+                    + "like the most wonderful and important person in the "
+                    + "world.");
+            traits.add("The common folk love me for my kindness and "
+                    + "generosity.");
+            traits.add("No one could doubt by looking at my regal bearing that "
+                    + "I am a cut above the unwashed masses.");
+            traits.add("I take great pains to always look my best and follow "
+                    + "the latest fashions.");
+            traits.add("I don’t like to get my hands dirty, and I won’t be "
+                    + "caught dead in unsuitable accommodations.");
+            traits.add("Despite my noble birth, I do not place myself above "
+                    + "other folk. We all have the same blood.");
+            traits.add("My favor, once lost, is lost forever.");
+            traits.add("If you do me an injury, I will crush you, ruin your "
+                    + "name, and salt your fields.");
+        }
             
         int choice1 = (int) (Math.random()*traits.size());
         trait1 = traits.get(choice1);
@@ -711,6 +729,21 @@ class Background {
             ideals.add("Self-Knowledge. If you know yourself, there’s "
                     + "nothing left to know. (Any)");
         }
+        else if (this.name.equals("Noble")){
+            ideals.add("Respect. Respect is due to me because of my position, "
+                    + "but all people regardless of station deserve to be "
+                    + "treated with dignity. (Good)");
+            ideals.add("Responsibility. It is my duty to respect the authority "
+                    + "of those above me, just as those below me must "
+                    + "respect mine. (Lawful)");
+            ideals.add("Independence. I must prove that I can handle myself "
+                    + "without the coddling of my family. (Chaotic)");
+            ideals.add("Power. If I can attain more power, no one will tell "
+                    + "me what to do. (Evil)");
+            ideals.add("Family. Blood runs thicker than water. (Any)");
+            ideals.add("Noble Obligation. It is my duty to protect and care "
+                    + "for the people beneath me. (Good)");
+        }
         int choice = (int) (Math.random()*ideals.size());
         ideal = ideals.get(choice);
     }
@@ -811,9 +844,21 @@ class Background {
                     + "ruin to the world.");
             bonds.add("My isolation gave me great insight into a great evil "
                     + "that only I can destroy.");
+        }
+        else if (this.name.equals("Noble")){
+            bonds.add("I will face any challenge to win the approval of my "
+                    + "family.");
+            bonds.add("My house’s alliance with another noble family must be "
+                    + "sustained at all costs.");
+            bonds.add("Nothing is more important than the other members of my "
+                    + "family.");
+            bonds.add("I am in love with the heir of a family that my family "
+                    + "despises.");
+            bonds.add("My loyalty to my sovereign is unwavering.");
+            bonds.add("The common folk must see me as a hero of the people.");
+        }
         int choice = (int) (Math.random()*bonds.size());
         bond = bonds.get(choice);
-        }
     }
 
     private void setFlaw() {
