@@ -41,7 +41,7 @@ class DNDClass {
         ArrayList<String> classes = new ArrayList<String>();
         
         //add classes here
-        /*classes.add("Barbarian");
+        classes.add("Barbarian");
         classes.add("Bard");
         classes.add("Cleric");
         classes.add("Druid");
@@ -51,7 +51,7 @@ class DNDClass {
         classes.add("Ranger");
         classes.add("Rogue");
         classes.add("Sorcerer");
-        classes.add("Warlock");*/
+        classes.add("Warlock");
         classes.add("Wizard");
         
         //return
